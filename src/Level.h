@@ -107,19 +107,11 @@ class Level
         std::vector<Bonus*> bonuses;
         std::vector<SDL_Surface*> eatenBonuses;
 
-        // Used for all delays; rdy msg's, pauses, ect. Called by  start_delay()
         Timer delay_timer;
-
-        // Used for audio
         Timer dotsAudio_timer;
         Timer sirenAudio_timer;
-
-        // Used for the length of the ghost_points bonus
         Timer ghost_pointsTimer;
-
-        // Used for timing bonuses(cherries, oranges, ect.)
         Timer bonus_timer;
-
         Timer bonusMsg_timer;
 
         Mix_Music *intermission;
