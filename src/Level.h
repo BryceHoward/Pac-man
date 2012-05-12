@@ -61,7 +61,6 @@ class Level
         void move_ghosts(const std::vector<SDL_Rect*> &map, Player &player, SDL_Event &event);
 
         void set_score();
-        void set_Hscore();
         void check_score();
         void update_score();
 

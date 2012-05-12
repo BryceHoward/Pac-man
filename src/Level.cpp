@@ -320,7 +320,7 @@ void Level::set_dots()
     dots.push_back(new Dot(520,240));
     dots.push_back(new Dot(536,240));
 
-    // ---------Twelth Row-------
+    // ---------Twelfth Row-------
     dots.push_back(new Dot(24,496));
     dots.push_back(new Dot(40,496));
     dots.push_back(new Dot(56,496));
@@ -613,11 +613,6 @@ void Level::set_score()
     else dots_eaten = 0;
 
     if (score > highscore) highscore = score;
-}
-
-void Level::set_Hscore()
-{
-
 }
 
 void Level::update_score()
