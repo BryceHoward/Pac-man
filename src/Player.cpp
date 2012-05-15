@@ -12,15 +12,7 @@ Player::Player()
     s_pressed(false),
     d_pressed(false)
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
     load_sprite("resources/images/Pacman Sprite Sheet1.png");
-=======
-    load_sprite("Pacman Sprite Sheet1.png");
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-    load_sprite("Pacman Sprite Sheet1.png");
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
     set_clips();
 
     box.x = startX;

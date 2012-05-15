@@ -2,23 +2,10 @@
 
 Titlescreen::Titlescreen()
     :
-<<<<<<< HEAD
-<<<<<<< HEAD
     image(load_image("resources/images/Title.png")),
     player(load_image("resources/images/Single Pacman.png")),
     dot(load_image("resources/images/Ball thingy.png")),
     ghosts(load_image("resources/images/Ghost Sprite Sheet.png")),
-=======
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-    image(load_image("Title.png")),
-    player(load_image("Single Pacman.png")),
-    dot(load_image("Ball thingy.png")),
-    ghosts(load_image("Ghost Sprite Sheet.png")),
-<<<<<<< HEAD
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
     play(120, 500),
     quit(350, 500),
     _chosen(false),
