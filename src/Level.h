@@ -6,7 +6,10 @@
 
 #include "SDL.h"
 #include "SDL/SDL_ttf.h"
+<<<<<<< HEAD
 #include "SDL/SDL_mixer.h"
+=======
+>>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
 #include "Utility.h"
 #include "Game.h"
 #include "Object.h"
@@ -107,8 +110,11 @@ class Level
         std::vector<Bonus*> bonuses;
         std::vector<SDL_Surface*> eatenBonuses;
 
+<<<<<<< HEAD
         Player player;
 
+=======
+>>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
         Timer delay_timer;
         Timer dotsAudio_timer;
         Timer sirenAudio_timer;
@@ -141,7 +147,10 @@ class Level
         SDL_Color fontColor;
 
         QuitMessege quit_messege;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
 };
 
 #endif // LEVEL_H

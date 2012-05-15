@@ -4,7 +4,11 @@ Dot::Dot(int x, int y)
     :
     eaten(false)
 {
+<<<<<<< HEAD
     load_sprite("resources/images/Ball thingy.png");
+=======
+    load_sprite("Ball thingy.png");
+>>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
 
     box.x = x;
     box.y = y;
