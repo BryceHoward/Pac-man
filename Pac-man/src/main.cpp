@@ -18,14 +18,10 @@ int main ( int argc, char** argv )
     Game game;
     SDL_Event event;
 <<<<<<< HEAD
-<<<<<<< HEAD
     Level level("resources/images/Pacman Map.png");
 =======
     Level level("Pacman Map.png");
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-    Level level("Pacman Map.png");
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
     Titlescreen titlescreen;
 
     if (!game.init())

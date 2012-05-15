@@ -1,13 +1,9 @@
 #include "Utility.h"
 #include "SDL/SDL_image.h"
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 #include "cmath"
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-#include "cmath"
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
 
 SDL_Surface *load_image( std::string filename )
 {
@@ -43,10 +39,7 @@ void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination,
 }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
 double distance( int x1, int y1, int x2, int y2 )
 {
     //Return the distance between the two points
@@ -81,10 +74,7 @@ bool check_collision(const SDL_Rect &A, SDL_Rect B[])
     return false;
 }
 
-<<<<<<< HEAD
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
 bool check_collision(const SDL_Rect &A, const std::vector<SDL_Rect*> &B)
 {
     int leftA, leftB;
@@ -139,17 +129,11 @@ bool check_collision(const SDL_Rect &A, const SDL_Rect &B)
     return false;
 }
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
 
 
 int get_rand(int high)
 {
     return rand() & high + 1;
 }
-<<<<<<< HEAD
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd

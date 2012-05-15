@@ -6,14 +6,10 @@ Button::Button(int x, int y)
     mouseOver(false),
     color({255, 255 , 255}),
 <<<<<<< HEAD
-<<<<<<< HEAD
     whitePixel(load_image("resources/images/Blank Pixel.png")),
 =======
     whitePixel(load_image("Blank Pixel.png")),
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-    whitePixel(load_image("Blank Pixel.png")),
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
     box({x, y, 0, 0})
 {
 
@@ -64,14 +60,10 @@ bool Button::clicked(SDL_Event &event)
 void Button::load_messege(std::string messege)
 {
 <<<<<<< HEAD
-<<<<<<< HEAD
     font = TTF_OpenFont("resources/images/BitNano.ttf", 65);
 =======
     font = TTF_OpenFont("BitNano.ttf", 65);
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-    font = TTF_OpenFont("BitNano.ttf", 65);
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
 
     std::stringstream s;
 
@@ -82,12 +74,9 @@ void Button::load_messege(std::string messege)
     imageOnMouseOver = TTF_RenderText_Solid(font, s.str().c_str(), color);
 
 <<<<<<< HEAD
-<<<<<<< HEAD
     // creates a white border around imageOnMouseOver
 =======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
     for (int x = 0, maxX = imageOnMouseOver->w; x < maxX; x++)
     {
         for (int y = 0, maxY = imageOnMouseOver->h; y < maxY; y++)

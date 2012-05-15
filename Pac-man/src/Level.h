@@ -7,12 +7,9 @@
 #include "SDL.h"
 #include "SDL/SDL_ttf.h"
 <<<<<<< HEAD
-<<<<<<< HEAD
 #include "SDL/SDL_mixer.h"
 =======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
 #include "Utility.h"
 #include "Game.h"
 #include "Object.h"
@@ -114,13 +111,10 @@ class Level
         std::vector<SDL_Surface*> eatenBonuses;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
         Player player;
 
 =======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
         Timer delay_timer;
         Timer dotsAudio_timer;
         Timer sirenAudio_timer;
@@ -154,12 +148,9 @@ class Level
 
         QuitMessege quit_messege;
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 =======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
 };
 
 #endif // LEVEL_H

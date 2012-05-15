@@ -5,17 +5,12 @@ Level::Level(std::string filename)
     :
     background(load_image(filename.c_str())),
 <<<<<<< HEAD
-<<<<<<< HEAD
     livesImg(load_image("resources/images/Single Pacman.png")),
     quit_messege("resources/images/Quit Screen.png", 150, 200),
 =======
     livesImg(load_image("Single Pacman.png")),
     quit_messege("Quit Screen.png", 150, 200),
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-    livesImg(load_image("Single Pacman.png")),
-    quit_messege("Quit Screen.png", 150, 200),
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
     _quit(false),
     _won(false),
     _lost(false),
@@ -52,12 +47,9 @@ Level::~Level()
 }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 // update for pauses; sdl_delay()
 =======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
 void Level::update()
 {
     apply_surface(0, 0, background, screen );
@@ -70,12 +62,9 @@ void Level::update()
 }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 // update for that includes collis detec for dots/bonuses(aka cherries)
 =======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
 void Level::update(const SDL_Rect &player, std::vector<Ghost*> &ghosts)
 {
     apply_surface(0, 0, background, screen );
@@ -162,16 +151,11 @@ void Level::start(SDL_Event &event, Game& game)
     }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
     // opening sequence
 =======
     Player player;
 
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-    Player player;
-
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
     update();
     player.update();
 
@@ -194,12 +178,9 @@ void Level::start(SDL_Event &event, Game& game)
             if (event.type == SDL_QUIT)
             {
 <<<<<<< HEAD
-<<<<<<< HEAD
                 // "are you sure you want to quit?"
 =======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
                 quit_loop(event, player, game);
             }
         }
@@ -621,13 +602,10 @@ void Level::update_dots()
 void Level::set_score()
 {
 <<<<<<< HEAD
-<<<<<<< HEAD
     // I feel like this is a terrible system of tracking scores, but this is what I ended up with
 
 =======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
     score = 0;
 
     for (int x = 0; x < dots.size(); x++)
@@ -668,14 +646,10 @@ void Level::update_score()
     set_score();
 
 <<<<<<< HEAD
-<<<<<<< HEAD
     msgFont = TTF_OpenFont("resources/images/BitNano.ttf", 35);
 =======
     msgFont = TTF_OpenFont("BitNano.ttf", 35);
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-    msgFont = TTF_OpenFont("BitNano.ttf", 35);
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
     fontColor = {255,255,255};
 
     std::stringstream caption;
@@ -942,14 +916,10 @@ void Level::handle_death(Player &player, SDL_Event &event, Game &game)
 void Level::ready_msg()
 {
 <<<<<<< HEAD
-<<<<<<< HEAD
     msgFont = TTF_OpenFont("resources/images/BitNano.ttf", 45);
 =======
     msgFont = TTF_OpenFont("BitNano.ttf", 45);
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-    msgFont = TTF_OpenFont("BitNano.ttf", 45);
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
     fontColor = {255,255,255};
 
     std::stringstream caption;
@@ -966,14 +936,10 @@ void Level::ready_msg()
 void Level::gameOver_msg()
 {
 <<<<<<< HEAD
-<<<<<<< HEAD
     msgFont = TTF_OpenFont("resources/images/BitNano.ttf", 50);
 =======
     msgFont = TTF_OpenFont("BitNano.ttf", 50);
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-    msgFont = TTF_OpenFont("BitNano.ttf", 50);
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
     fontColor = {237,28,36};
 
     std::stringstream caption;
@@ -1004,12 +970,9 @@ void Level::start_delay(SDL_Event &event, int ms)
 }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 // Fixes a bug where during a delay, if the player releases a button, the corresponding vel isn't affected.
 =======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
 void Level::start_delay(SDL_Event &event, int ms, Player &player)
 {
     delay_timer.start();
@@ -1055,7 +1018,6 @@ void Level::handle_win(Player& player, SDL_Event &event)
 bool Level::load_files()
 {
 <<<<<<< HEAD
-<<<<<<< HEAD
     intermission = Mix_LoadMUS("resources/sounds/Intermission.wav");
 
     opening = Mix_LoadWAV("resources/sounds/Opening.wav");
@@ -1067,8 +1029,6 @@ bool Level::load_files()
     siren = Mix_LoadWAV("resources/sounds/Siren.wav");
     powerPill = Mix_LoadWAV("resources/sounds/Power Pill.wav");
 =======
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
     intermission = Mix_LoadMUS("Intermission.wav");
 
     opening = Mix_LoadWAV("Opening.wav");
@@ -1079,10 +1039,7 @@ bool Level::load_files()
     eatingGhost = Mix_LoadWAV("Eat Ghost.wav");
     siren = Mix_LoadWAV("Siren.wav");
     powerPill = Mix_LoadWAV("Power Pill.wav");
-<<<<<<< HEAD
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
 
     if (waka == NULL || opening == NULL || death == NULL || eatingCherry == NULL || powerPill == NULL ||
         extraLife_Audio == NULL || eatingGhost == NULL || siren == NULL || intermission == NULL)
@@ -1091,7 +1048,6 @@ bool Level::load_files()
     }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
     msgFont = TTF_OpenFont("resources/images/BitNano.ttf", 35);
 
     deathSequence = load_image("resources/images/Pacman Death Sequence.png");
@@ -1099,12 +1055,7 @@ bool Level::load_files()
     msgFont = TTF_OpenFont("BitNano.ttf", 35);
 
     deathSequence = load_image("Pacman Death Sequence.png");
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-    msgFont = TTF_OpenFont("BitNano.ttf", 35);
-
-    deathSequence = load_image("Pacman Death Sequence.png");
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
 
     if (msgFont == NULL || deathSequence == NULL)
     {
@@ -1128,14 +1079,10 @@ void Level::play_siren()
 void Level::points_msg(int x, int y, int amount)
 {
 <<<<<<< HEAD
-<<<<<<< HEAD
     msgFont = TTF_OpenFont("resources/images/BitNano.ttf", 30);
 =======
     msgFont = TTF_OpenFont("BitNano.ttf", 30);
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-    msgFont = TTF_OpenFont("BitNano.ttf", 30);
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
     fontColor = {0,236,236};
 
     std::stringstream caption;
@@ -1162,12 +1109,9 @@ void Level::update_bonuses(const SDL_Rect& player)
             lastScore += level * 100 + 100;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
             // copies the eaten bonus's image to the back of eatenBonuses
 =======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
             eatenBonuses.push_back(SDL_ConvertSurface(bonuses[x]->getImg(), bonuses[x]->getImg()->format, bonuses[x]->getImg()->flags));
         }
     }
@@ -1188,22 +1132,16 @@ void Level::set_bonuses()
     del_bonuses();
 
 <<<<<<< HEAD
-<<<<<<< HEAD
     bonuses.push_back(new Bonus("resources/images/Cherry.png"));
     bonuses.push_back(new Bonus("resources/images/Strawberry.png"));
     bonuses.push_back(new Bonus("resources/images/Apple.png"));
     bonuses.push_back(new Bonus("resources/images/Orange.png"));
 =======
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
     bonuses.push_back(new Bonus("Cherry.png"));
     bonuses.push_back(new Bonus("Strawberry.png"));
     bonuses.push_back(new Bonus("Apple.png"));
     bonuses.push_back(new Bonus("Orange.png"));
-<<<<<<< HEAD
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
 }
 
 void Level::del_bonuses()

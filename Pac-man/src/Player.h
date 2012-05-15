@@ -16,13 +16,9 @@ class Player : public MoveableObject
         void input(SDL_Event& even);
         void reset();
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
         void stop() {xVel = 0; yVel = 0;}
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-        void stop() {xVel = 0; yVel = 0;}
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
 
     protected:
 

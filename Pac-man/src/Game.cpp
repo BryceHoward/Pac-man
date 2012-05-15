@@ -25,20 +25,15 @@ Game::~Game()
 bool Game::init()
 {
 <<<<<<< HEAD
-<<<<<<< HEAD
     icon = SDL_LoadBMP("resources/images/Pacman Icon.bmp");
 =======
     icon = SDL_LoadBMP("Pacman Icon.bmp");
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-    icon = SDL_LoadBMP("Pacman Icon.bmp");
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
 
     if (icon == NULL)
     {
         return false;
     }
-<<<<<<< HEAD
 <<<<<<< HEAD
     else
 
@@ -46,11 +41,7 @@ bool Game::init()
 =======
     else SDL_SetColorKey( icon, SDL_SRCCOLORKEY, SDL_MapRGB( icon->format, 0, 0xFF, 0xFF ) );
 
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-    else SDL_SetColorKey( icon, SDL_SRCCOLORKEY, SDL_MapRGB( icon->format, 0, 0xFF, 0xFF ) );
-
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
     SDL_WM_SetIcon(icon, NULL);
     SDL_WM_SetCaption( "Pacaman", NULL );
 

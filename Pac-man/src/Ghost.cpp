@@ -17,14 +17,10 @@ Ghost::Ghost(int ghost_color, bool is_smart)
     weak_animCntr(0)
 {
 <<<<<<< HEAD
-<<<<<<< HEAD
     load_sprite("resources/images/Ghost Sprite Sheet.png");
 =======
     load_sprite("Ghost Sprite Sheet.png");
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-    load_sprite("Ghost Sprite Sheet.png");
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
     set_clips();
     change_direction();
 
@@ -330,12 +326,9 @@ SDL_Rect* Ghost::get_clip()
     }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
     // fixes a bug where the last image of a just eaten ghosts reappears before it's sent to the 'jail'
 =======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
     if (dead && weak)
     {
         curr_clip = 43;
@@ -382,13 +375,9 @@ void Ghost::phone_home()
     set_deadStage();
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
     if (dead_stage == 2) box.y -= 1;
 }
 

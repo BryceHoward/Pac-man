@@ -7,14 +7,10 @@ PowerUp::PowerUp(int x, int y)
     anim_count(0)
 {
 <<<<<<< HEAD
-<<<<<<< HEAD
     load_sprite("resources/images/Large Dot.png");
 =======
     load_sprite("Large Dot.png");
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
-    load_sprite("Large Dot.png");
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
 
     box.x = x;
     box.y = y;

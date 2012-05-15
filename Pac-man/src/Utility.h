@@ -3,7 +3,6 @@
 
 #include "SDL.h"
 <<<<<<< HEAD
-<<<<<<< HEAD
 #include <string>
 #include <vector>
 
@@ -11,8 +10,6 @@ bool check_collision(const SDL_Rect &A, const SDL_Rect &B);
 bool check_collision(const SDL_Rect &A, const std::vector<SDL_Rect*> &B);
 
 =======
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
 #include "SDL/SDL_ttf.h"
 #include "SDL/SDL_mixer.h"
 #include <string>
@@ -33,10 +30,7 @@ double distance( int x1, int y1, int x2, int y2 );
 
 int get_rand(int a);
 
-<<<<<<< HEAD
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
-=======
->>>>>>> 9ee030802e80d466304013ed104b0372c5e1b78d
+>>>>>>> a08e0b82c77ec6c3b4a4d2e9ec38054a74399abd
 SDL_Surface *load_image(std::string filename);
 void apply_surface(int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL);
 
